@@ -1,9 +1,9 @@
-Magnetic Imaging Tile
+Magnetic Imaging Tile - 8x8
 ======
 
 ![SparkFun Magnetic Imaging Tile](https://cdn.sparkfun.com//assets/parts/1/2/8/3/9/Magnetic-Imager-Fan.gif)
 
-[*SparkFun Magnetic Imaging Tile (XXX-26092)*](https://sparkle.sparkfun.com/sparkle/storefront_products/26092#tab-dashboard)
+[*SparkFun Magnetic Imaging Tile - 8x8 (SEN-26092)*](https://sparkle.sparkfun.com/sparkle/storefront_products/26092#tab-dashboard)
 
 The Magnetic Imaging Tile uses an array of 64 hall effect sensors to convert magnetic fields to the visual spectrum. That's right! You can now see magnetic fields in real time! As is to be expected, there are caveats: the magnetic sensors used on the tile are some of the most sensitive on the market but you need to be within 1 to 2 centimeters of the tile to get a good image.
 
