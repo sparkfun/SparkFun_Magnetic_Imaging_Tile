@@ -1,3 +1,16 @@
+This example is located in the Magnetic Imaging Tile's Hardware Repo. To grab it, go ahead and download or clone the [SparkFun Magnetic Imaging Tile hardware repo](https://github.com/sparkfun/SparkFun_Magnetic_Imaging_Tile/).
+
+<div style="text-align: center"><a href="https://github.com/sparkfun/SparkFun_Magnetic_Imaging_Tile/archive/refs/heads/main.zip" target="download_magnetic_Imaging_tile_hardware_repo" class="md-button">Download Magnetic Imaging Tile Hardware Repo (ZIP)</a></div>
+
+
+
+### Upload Arduino Example
+
+After unzipping the compressed files, navigate to the hardware repo's folder and open the example: ... **SparkFun_Magnetic_Imaging_Tile** > **Software** > **arduino** > **Example1_Basic_Readings** > **Example1_Basic_Readings.ino**. This sketch listens for a character before parsing the data. For users using an Arduino microcontroller, select your board in the Tools menu (in our caset the **SparkFun SAMD21 Mini Breakout**) and the correct Port it enumerated on.
+
+You can also copy or paste the code as shown below. Then click "Upload".
+
+``` c++
 /*
  This basic example shows how to interface with the Magnetic Imaging Tile V3
  with a Chipkit MAX32, with data displayed via the serial port.
@@ -18,7 +31,7 @@
  This code was written in MPIDE 0023-windows-20140316 .
 */
 
-////Define where to pipe serial print statements
+//Define where to pipe serial print statements
 //#define terminal Serial //Use with Uno, SAMD51, Chipkit
 #define terminal SerialUSB //Use with SAMD21
 
@@ -282,7 +295,7 @@ void loop() {
   if(terminal.available())
   {
     byte incoming = terminal.read();
-    
+
     if (incoming == 'L') {
       terminal.println("Live");
       curMode = MODE_LIVE;
@@ -354,7 +367,7 @@ void loop() {
 
   } else if (curMode == MODE_PIXEL) {
     //Read single pixel. Good for testing.
-    
+
     curMode = MODE_IDLE;
 
     terminal.println ("Initializing.... Press L (live) or H (high speed), 1, 2, 3, or S (idle)");
@@ -363,3 +376,87 @@ void loop() {
   //delay(10);
 }
 
+```
+
+!!! note
+    There is also an example for Diligent's chipKIT Max32! For users that are interested in using the board, the example code is in the **chipkit** folder.
+
+After uploading the code, open the [Serial Monitor](https://learn.sparkfun.com/tutorials/terminal-basics) or terminal emulator of your choice with the baud rate set to **115200**. Enter a character (<kbd>L</kbd> , <kbd>H</kbd> , <kbd>1</kbd> , <kbd>2</kbd> , <kbd>3</kbd>, and <kbd>S</kbd> ) to select the mode. In this case, we set the mode to live.
+
+<div style="text-align: center;">
+  <table>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Select_Mode.JPG"><img src="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Select_Mode.JPG" width="600px" height="600px" alt="Select Mode"></a></td>
+    </tr>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Select Mode</i></td>
+    </tr>
+  </table>
+</div>
+
+The output will then begin output the readings.
+
+<div style="text-align: center;">
+  <table>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Output.JPG"><img src="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Output.JPG" width="600px" height="600px" alt="Arduino IDE with Output, No Magnet"></a></td>
+    </tr>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Arduino IDE with Output, No Magnet</i></td>
+    </tr>
+  </table>
+</div>
+
+Grab a magnet and place it near the sensor. In this case, the magnet was placed over the hall effect sensor at 0,0. The magnitude of the value will depend on the orientation of the magnet and the strength of the magnet. In this case, the magnitude was greater around 0,0.
+
+<div style="text-align: center;">
+  <table>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Output_0x_0y.JPG"><img src="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Output_0x_0y.JPG" width="600px" height="600px" alt="Arduino IDE with Output, Magnet Over 0,0"></a></td>
+    </tr>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Arduino IDE with Output, Magnet Over 0,0</i></td>
+    </tr>    
+  </table>
+</div>
+
+Rotating the magnet to the other pole and place it over 0,0 again. In this case, the value was lower around 0,0.
+
+<div style="text-align: center;">
+  <table>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Output_0x_0y_North.JPG"><img src="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Output_0x_0y_North.JPG" width="600px" height="600px" alt="Arduino IDE with Output, Magnet North Over 0,0"></a></td>
+    </tr>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Arduino IDE with Output, Magnet North Over 0,0</i></td>
+    </tr>   
+  </table>
+</div>
+
+Try moving the magnet to a different location near the array of hall effect sensors to track the magnetic field. In this case, we moved it to 7,7. If you inspect the values, you will notice that the magnet was also rotated to the other pole. In this case, the magnitude was greater around 7,7.
+
+<div style="text-align: center;">
+  <table>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Output_7x_7y.JPG"><img src="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Output_7x_7y.JPG" width="600px" height="600px" alt="Arduino IDE with Output, Magnet Over 7,7"></a></td>
+    </tr>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Arduino IDE with Output, Magnet Over 7,7</i></td>
+    </tr>
+  </table>
+</div>
+
+Rotating the magnet to the other pole at 7,7 will result in the opposite effect where the values were lower around 0,0. This is similar to what was observed earlier.
+
+<div style="text-align: center;">
+  <table>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Output_7x_7y_North.JPG"><img src="../assets/img/Arduino_Turbo_SAMD21_Magnetic_Imaging_Tile_Output_7x_7y_North.JPG" width="600px" height="600px" alt="Arduino IDE with Output, Magnet North Over 7x,7y"></a></td>
+    </tr>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Arduino IDE with Output, Magnet North Over 7,7</i></td>
+    </tr>
+  </table>
+</div>
+
+Looking for a more visual output? We'll use this example loaded on the Arduino to visualize the output through the Processing IDE!
