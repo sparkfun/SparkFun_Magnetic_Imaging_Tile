@@ -238,8 +238,8 @@ extra_javascript:
 nav:
   - Getting Started:
     - Introduction: introduction.md
-    # - Hardware Overview: hardware_overview.md
-    # - Hardware Hookup: hardware_hookup.md
+    - Hardware Overview: hardware_overview.md
+    - Hardware Hookup: hardware_hookup.md
     - Setting Up Arduino: setting_up_arduino.md
     - Arduino Example: arduino_example.md
     - Setting Up Processing: setting_up_processing.md

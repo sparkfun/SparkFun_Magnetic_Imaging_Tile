@@ -412,59 +412,59 @@ Identify which serial port your Arduino is on. For instance, my SparkFun RedBoar
   </table>
 </div>
 
-Once we've done this, we should be able to run the Processing sketch and it will give us a nice visualization of magnetic fields in range of the Magnetic Imaging Tile. Send a character to set the mode. By sending a lower case <kbd>l</kbd> in the window with the visualization will set it to live mode and begin streaming data live from the tile. As explained in the example code, the top 8x8 grid will display the normal gain. The bottom 8x8 grid will display a high gain. Place a magnet near the array of hall effect sensors. In this case, a magnet was placed over 0,0 as shown in the Processing Console's serial output. The grids in this case did not show any changes.
+Once we've done this, we should be able to run the Processing sketch and it will give us a nice visualization of the magnetic fields in range of the Magnetic Imaging Tile. Send a character to set the mode. By sending a lower case <kbd>l</kbd> in the window with the visualization will set it to live mode and begin streaming data live from the tile. As explained in the example code, the top 8x8 grid will display the normal gain. The bottom 8x8 grid will display a high gain. Place a magnet near the array of hall effect sensors. In this case, a magnet was placed over (0,0) as shown in the Processing Console's serial output. The grid in this case did not show any changes.
 
 <div style="text-align: center;">
   <table>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_0x_0y.JPG"><img src="../assets/img/Processing_0x_0y.JPG" width="600px" height="600px" alt="Processing Output, Magnet Over 0,0"></a></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_0x_0y.JPG"><img src="../assets/img/Processing_0x_0y.JPG" width="600px" height="600px" alt="Processing Output, Magnet Over (0,0)"></a></td>
     </tr>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Magnet Over 0,0</i></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Magnet Over (0,0)</i></td>
     </tr>   
   </table>
 </div>
 
-Rotating the magnet to the other pole and place it over 0,0 again. In this case, the change was more apparent as we are able to view the magnetic fields in red.
+Rotating the magnet to the other pole and place it over (0,0) again. In this case, the change was more apparent as we are able to view the magnetic fields in red. If you know the polarity of the magnet as explained earlier in the Arduino example, you will notice that the squares that have a red color are lower in magnitude whenever the magnet's north pole is placed over the hall effect sensor.
 
 <div style="text-align: center;">
   <table>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_0x_0y_North.JPG"><img src="../assets/img/Processing_0x_0y_North.JPG" width="600px" height="600px" alt="Processing Output, Magnet North Over 0,0"></a></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_0x_0y_North.JPG"><img src="../assets/img/Processing_0x_0y_North.JPG" width="600px" height="600px" alt="Processing Output, Magnet North Over (0,0)"></a></td>
     </tr>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Magnet North Over 0,0</i></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Magnet North Over (0,0)</i></td>
     </tr>   
   </table>
 </div>
 
-Rotating the magnet back to the other pole and place it to a different position near the array of hall effect sensors. In this case, the magnet was placed around 7,7 and did not show much change in the 8x8 grids.
+Rotating the magnet back to the other pole and place it to a different position near the array of hall effect sensors. In this case, the magnet was placed around (7,7) and did not show as much of a change in the 8x8 grid.
 
 <div style="text-align: center;">
   <table>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_7x_7y.JPG"><img src="../assets/img/Processing_7x_7y.JPG" width="600px" height="600px" alt="Processing Output, Magnet Over 7,7"></a></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_7x_7y.JPG"><img src="../assets/img/Processing_7x_7y.JPG" width="600px" height="600px" alt="Processing Output, Magnet Over (7,7)"></a></td>
     </tr>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Magnet Over 7,7</i></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Magnet Over (7,7)</i></td>
     </tr>   
   </table>
 </div>
 
-Rotate the magnet to the other pole and place it around 7,7. In this case, we are able to view the magnetic fields in red again.
+Rotate the magnet to the other pole and place it around (7,7). In this case, we are able to view the magnetic fields in red again.
 
 <div style="text-align: center;">
   <table>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_7x_7y_North.JPG"><img src="../assets/img/Processing_7x_7y_North.JPG" width="600px" height="600px" alt="Processing Output, Magnet North Over 7,7"></a></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_7x_7y_North.JPG"><img src="../assets/img/Processing_7x_7y_North.JPG" width="600px" height="600px" alt="Processing Output, Magnet North Over (7,7)"></a></td>
     </tr>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Magnet North Over 7,7</i></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Magnet North Over (7,7)</i></td>
     </tr>   
   </table>
 </div>
 
-When in live mode, it's also possible to calibrate out the background level for each tile to reduce the noise in the Processing example. Send a lower case <kbd>c</kbd> in the window with the visualization. When calibrating, ensure that there are no magnetic fields present on the tile. After a few seconds, the visualization will show a different color in the 8x8 grid.
+When in live mode, it's also possible to calibrate out the background level for each tile to reduce the noise in the Processing example. Send a lower case <kbd>c</kbd> in the window with the visualization. When calibrating, ensure that there are no magnetic fields present around the tile. After a few seconds, the visualization will show a different color in the 8x8 grid.
 
 <div style="text-align: center;">
   <table>
@@ -477,32 +477,47 @@ When in live mode, it's also possible to calibrate out the background level for 
   </table>
 </div>
 
-Place a magnet over 0,0. In this case, the change was apparent with both sides of the magnet.
+Place a magnet over (0,0). In this case, the change was apparent with both sides of the magnet where the magnet's south pole was shown with green and the magnet's north pole was shown with red.
 
 <div style="text-align: center;">
   <table>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_0x_0y_Calibrated.JPG"><img src="../assets/img/Processing_0x_0y_Calibrated.JPG" width="600px" height="600px" alt="Processing Output, Calibrated with Magnet Over 0,0"></a></td>
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_0x_0y_North_Calibrated.JPG"><img src="../assets/img/Processing_0x_0y_North_Calibrated.JPG" width="600px" height="600px" alt="Processing Output, Calibrated with Magnet North Over 0,0"></a></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_0x_0y_Calibrated.JPG"><img src="../assets/img/Processing_0x_0y_Calibrated.JPG" width="600px" height="600px" alt="Processing Output, Calibrated with Magnet Over (0,0)"></a></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_0x_0y_North_Calibrated.JPG"><img src="../assets/img/Processing_0x_0y_North_Calibrated.JPG" width="600px" height="600px" alt="Processing Output, Calibrated with Magnet North Over (0,0)"></a></td>
     </tr>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Calibrated with Magnet Over 0,0</i></td>
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Calibrated with Magnet North Over 0,0</i></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Calibrated with Magnet Over (0,0)</i></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Calibrated with Magnet North Over (0,0)</i></td>
     </tr>   
   </table>
 </div>
 
-Place the magnet over 7,7. You should see something similar like the images below. The color of the magnetic field in the grid will depend on the orientation of the magnet.
+Place the magnet over (7,7). You should see something similar like the images below. The color of the magnetic field in the grid will depend on the orientation of the magnet.
 
 <div style="text-align: center;">
   <table>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_7x_7y_Calibrated.JPG"><img src="../assets/img/Processing_7x_7y_Calibrated.JPG" width="600px" height="600px" alt="Processing Output, Calibrated with Magnet Over 7,7"></a></td>
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_7x_7y_North_Calibrated.JPG"><img src="../assets/img/Processing_7x_7y_North_Calibrated.JPG" width="600px" height="600px" alt="Processing Output, Calibrated with Magnet North Over 7,7"></a></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_7x_7y_Calibrated.JPG"><img src="../assets/img/Processing_7x_7y_Calibrated.JPG" width="600px" height="600px" alt="Processing Output, Calibrated with Magnet Over (7,7)"></a></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/Processing_7x_7y_North_Calibrated.JPG"><img src="../assets/img/Processing_7x_7y_North_Calibrated.JPG" width="600px" height="600px" alt="Processing Output, Calibrated with Magnet North Over (7,7)"></a></td>
     </tr>
     <tr style="vertical-align:middle;">
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Calibrated with Magnet Over 7,7</i></td>
-     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Calibrated with Magnet North Over 7,7</i></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Calibrated with Magnet Over (7,7)</i></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output, Calibrated with Magnet North Over (7,7)</i></td>
+    </tr>   
+  </table>
+</div>
+
+Now that we can see the magnetic fields from a magnet, try grabbing an object nearby to see if you can view any magnetic fields!
+
+<div style="text-align: center;">
+  <table>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/26943_Magnetic_Imaging_Tile_Hall_Effect_Sensors_Neodymium_Magnets_Action.gif"><img src="../assets/img/26943_Magnetic_Imaging_Tile_Hall_Effect_Sensors_Neodymium_Magnets_Action.gif" width="600px" height="600px" alt="Processing Output with a Magnet Moving over the Magnetic Imaging Tile"></a></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><a href="../assets/img/26943_Magnetic_Imaging_Tile_Hall_Effect_Sensors_Magnets_FanAction.gif"><img src="../assets/img/26943_Magnetic_Imaging_Tile_Hall_Effect_Sensors_Magnets_FanAction.gif" width="600px" height="600px" alt="Processing Output with a Fan Rotating over the Magnetic Imaging Tile"></a></td>
+    </tr>
+    <tr style="vertical-align:middle;">
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output with a Magnet Moving<br />over the Magnetic Imaging Tile</i></td>
+     <td style="text-align: center; vertical-align: middle; border: solid 1px #cccccc;"><i>Processing Output with a Fan Rotating<br />over the Magnetic Imaging Tile</i></td>
     </tr>   
   </table>
 </div>
