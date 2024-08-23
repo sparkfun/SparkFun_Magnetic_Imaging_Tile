@@ -29,11 +29,22 @@
 const byte PIN_ANALOG = A1;
 
 //On Arduino Unos and Red Boards this is the SPI pinout
+
 const byte PIN_CLR = 8;
 const byte PIN_CLK = 9;
 const byte AD7940_SPI_MISO = 12;
 const byte AD7940_SPI_CS = 10;
 const byte AD7940_SPI_CLK = 13;
+
+
+// Pins for SAMD51
+/*
+const byte PIN_CLR = 5;
+const byte PIN_CLK = 9;
+const byte AD7940_SPI_MISO = 22;
+const byte AD7940_SPI_CS = 10;
+const byte AD7940_SPI_CLK = 24;
+*/
 
 // Frames
 #if defined(__AVR_ATmega328P__) || defined(__AVR_ATmega168__)

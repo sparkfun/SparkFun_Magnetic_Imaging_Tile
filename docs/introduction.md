@@ -7,7 +7,7 @@ The [SparkFun Magnetic Imaging Tile - 8x8](https://www.sparkfun.com/products/260
 
 -   <a href="https://www.sparkfun.com/products/26092">
       <figure markdown>
-        <img src="" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun Magnetic Imaging Tile - 8x8">
+        <img src="https://cdn.sparkfun.com//assets/parts/2/6/9/4/3/26943-Magnetic-Imaging-Tile-Feature.jpg" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun Magnetic Imaging Tile - 8x8">
       </figure>
     </a>
 
@@ -20,9 +20,13 @@ The [SparkFun Magnetic Imaging Tile - 8x8](https://www.sparkfun.com/products/260
       <br />
       <center>[Purchase from SparkFun :fontawesome-solid-cart-plus:](https://www.sparkfun.com/products/26092){ .md-button .md-button--primary }</center>
     </a>
-
 </div>
 
+The demo shown in the animated GIFs don't quite give the Magnetic Imaging Tile justice! The frame rate of gifs is too low! Please see [Peter's demo video](https://www.youtube.com/watch?v=vxOuoWygxy0) for some amazing visuals.
+
+<div style="text-align: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/vxOuoWygxy0?si=k2MAxdDgUQiwu3nT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 In this tutorial, we'll go over the hardware and how to hookup the sensor to an Arduino. We will also go over an Arduino and Processing example to get started.
 
@@ -67,7 +71,7 @@ To follow along with this tutorial, you will need the following materials. You m
 <!-- ----------WHITE SPACE BETWEEN PRODUCTS---------- -->
 -   <a href="https://www.sparkfun.com/products/26092">
       <figure markdown>
-        <img src="" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun Magnetic Imaging Tile - 8x8">
+        <img src="https://cdn.sparkfun.com//assets/parts/2/6/9/4/3/26943-Magnetic-Imaging-Tile-Feature.jpg" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun Magnetic Imaging Tile - 8x8">
       </figure>
     </a>
 
@@ -109,9 +113,11 @@ To follow along with this tutorial, you will need the following materials. You m
 <!-- ----------WHITE SPACE BETWEEN PRODUCTS---------- -->
 </div>
 
+
+
 ### Other Microcontrollers
 
-We'll be using the RedBoard Turbo - SAMD21 Development Board for the examples in this tutorial. The code also compatible with SAMD microcontrollers like the SAMD21 Dev Breakout, SAMD21 Mini Breakout, and SparkFun Thing Plus - SAMD51. You can also use a Teensy as well.
+We'll be using the RedBoard Turbo - SAMD21 Development Board for the examples in this tutorial. The Arduino code also compatible with SAMD microcontrollers like the SAMD21 Dev Breakout, SAMD21 Mini Breakout, and SparkFun Thing Plus - SAMD51. You can also use a Teensy as well. Just make sure to solder headers (or wires) to the board and include a compatible USB cable with the development board.
 
 <div class="grid cards col-4" markdown>
 <!-- ----------WHITE SPACE BETWEEN PRODUCTS---------- -->
@@ -353,16 +359,16 @@ If you aren’t familiar with the following concepts, we also recommend checking
       <b>Installing Arduino IDE</b>
     </a>
 <!-- ----------WHITE SPACE BETWEEN GRID CARDS---------- -->
--   <a href="https://learn.sparkfun.com/tutorials/samd21-minidev-breakout-hookup-guide">
+-   <a href="https://learn.sparkfun.com/tutorials/redboard-turbo-hookup-guide">
       <figure markdown>
-        <img src="https://cdn.sparkfun.com/assets/learn_tutorials/4/5/4/photo-hardware-plugin.jpg" style="width:264px; height:148px; object-fit:contain;" alt="SAMD21 Mini/Dev Breakout Hookup Guide">
+        <img src="https://cdn.sparkfun.com/assets/learn_tutorials/8/5/1/14812-SparkFun_RedBoard_Turbo_-_SAMD21_Development_Board-01.jpg" style="width:264px; height:148px; object-fit:contain;" alt="RedBoard Turbo Hookup Guide">
       </figure>
     </a>
 
     ---
 
-    <a href="https://learn.sparkfun.com/tutorials/samd21-minidev-breakout-hookup-guide">
-      <b>SAMD21 Mini/Dev Breakout Hookup Guide</b>
+    <a href="https://learn.sparkfun.com/tutorials/redboard-turbo-hookup-guide">
+      <b>RedBoard Turbo Hookup Guide</b>
     </a>
 <!-- ----------WHITE SPACE BETWEEN GRID CARDS---------- -->
 -   <a href="https://learn.sparkfun.com/tutorials/installing-board-definitions-in-the-arduino-ide">
@@ -414,3 +420,6 @@ If you aren’t familiar with the following concepts, we also recommend checking
     </a>
 <!-- ----------WHITE SPACE BETWEEN GRID CARDS---------- -->
 </div>
+
+!!! note
+    This is a collaboration with Peter Jansen of the "[Open Source Science Tricorder Project](http://www.tricorderproject.org/)". All credit goes to him! You can read about his work on the project on [Hack A Day](https://hackaday.io/project/18518-iteration-8/log/91551-a-third-high-speed-magnetic-imager-tile).

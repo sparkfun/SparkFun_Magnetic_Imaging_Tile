@@ -79,6 +79,8 @@ The circuit includes an SN74HC590A 8-bit binary counter (the 14-pin IC on the to
   </table>
 </div>
 
+With a 16-bit ADC and a 3.3V range, this is approximately 50mV per bit. The Magnetic Imaging Tile is able to detect roughly +/- 0.5mT per bit. For our demo in the GIF we used a RedBoard Turbo with the SAMD21 to clock out the ADC data to the serial port at 115200. The serial is then parsed by a Processing sketch. This setup can achieve over 76 frames per second. With buffering the setup is capable of 200 fps. The ChipKit MAX32 is also supported and can achieve around 2,000fps. A faster processor should be able to achieve 1500fps (the 100kSPS limit of the ADC). The raw analog signal is also exposed. This allows processors that have built-in faster ADC to convert the signal directly. The theoretical limit of the DRV5053 is around 20,000 fps but would require a very fast ADC.
+
 
 
 ### SPI

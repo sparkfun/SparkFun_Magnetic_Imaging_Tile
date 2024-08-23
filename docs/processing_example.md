@@ -521,3 +521,7 @@ Now that we can see the magnetic fields from a magnet, try grabbing an object ne
     </tr>   
   </table>
 </div>
+
+
+!!! note
+    If you look closely at the GIF with a magnet, you will notice that there is a magnetic field on the upper left of the Processing output when the magnet is placed over the Magnetic Imaging Tile. However, the Magnetic Imaging Tile is rotated 90&deg; clockwise with respect to the Processing output as the magnet is placed over the hall effect sensor at (7x7).
