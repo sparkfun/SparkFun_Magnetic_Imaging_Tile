@@ -1,7 +1,7 @@
 SparkFun Magnetic Imaging Tile - 8x8
 ========================================
 
-[![SparkFun Magnetic Imaging Tile](https://cdn.sparkfun.com/r/600-600/assets/parts/2/6/9/4/3/26943-Magnetic-Imaging-Tile-Feature.jpg)](https://www.sparkfun.com/products/26092)
+<a href="https://www.sparkfun.com/products/26092"><img src="https://cdn.sparkfun.com//assets/parts/2/6/9/4/3/26943-Action-GIF-2.gif" width="600px" height="600px" alt="SparkFun Magnetic Imaging Tile - 8x8"></img></a>
 
 [*SparkFun Magnetic Imaging Tile - 8x8 (SEN-26092)*](https://www.sparkfun.com/products/26092)
 
