@@ -51,10 +51,14 @@ For the scope of this tutorial, we will use right angle, male headers. Insert th
             </th>
             <th style="text-align: center; border: solid 1px #cccccc;"> SAMD21 Pinout<br />(i.e. RedBoard Turbo, SAMD21 Mini, etc.)
             </th>
+            <th style="text-align: center; border: solid 1px #cccccc;"> Teensy Pinout<br />(i.e. Teensy v3.1, v3.5, v4.0, v4.1, etc.)
+            </th>
             <th style="text-align: center; border: solid 1px #cccccc;"> SAMD51 Pinout<br />(i.e. SAMD51 Thing Plus, etc.)
             </th>
         </tr>
         <tr>
+            <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#DDDDDD"><font color="#000000">GND</font>
+            </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#DDDDDD"><font color="#000000">GND</font>
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#DDDDDD"><font color="#000000">GND</font>
@@ -69,9 +73,13 @@ For the scope of this tutorial, we will use right angle, male headers. Insert th
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#cce5ff"><font color="#000000">A1</font>
             </td>
+            <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#cce5ff"><font color="#000000">A1</font>
+            </td>
         </tr>
         <tr>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#fff3cd"><font color="#000000">SCK</font>
+            <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#fff3cd"><font color="#000000">13</font>
+            </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#fff3cd"><font color="#000000">13</font>
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#fff3cd"><font color="#000000">24</font>
@@ -79,6 +87,8 @@ For the scope of this tutorial, we will use right angle, male headers. Insert th
         </tr>
         <tr>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#d4edda"><font color="#000000">MISO</font>
+            </td>
+            <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#d4edda"><font color="#000000">12</font>
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#d4edda"><font color="#000000">12</font>
             </td>
@@ -92,9 +102,13 @@ For the scope of this tutorial, we will use right angle, male headers. Insert th
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#f2dede"><font color="#000000">10</font>
             </td>
+            <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#f2dede"><font color="#000000">10</font>
+            </td>
         </tr>
         <tr>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#ffffff"><font color="#000000">CLR</font>
+            </td>
+            <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#ffffff"><font color="#000000">8</font>
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#ffffff"><font color="#000000">8</font>
             </td>
@@ -108,17 +122,24 @@ For the scope of this tutorial, we will use right angle, male headers. Insert th
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#ffdaaf"><font color="#000000">9</font>
             </td>
+            <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#ffdaaf"><font color="#000000">9</font>
+            </td>
         </tr>
         <tr>
-            <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#f2dede"><font color="#000000">3V3</font>
+            <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#f2dede"><font color="#000000">3.3V</font>
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#f2dede"><font color="#000000">3V3</font>
+            </td>
+            <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#f2dede"><font color="#000000">3.3V</font>
             </td>
             <td style="text-align: center; border: solid 1px #cccccc;" bgcolor="#f2dede"><font color="#000000">3V3</font>
             </td>
         </tr>
     </table>
 </div>
+
+!!! note
+    If you are using a development board with [updated SPI terminology](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/receiving-data), MISO may be labeled as POCI.
 
 We will be using the RedBoard Turbo with female headers already installed on the board. For users that are using a different board, now would be a good time to solder headers or wires to the board. Below is an example with female headers soldered on the SAMD51 Thing Plus. Additionally, there are stackable headers soldered on the SAMD21 Mini Breakout so that the board can be inserted into a breadboard.
 
