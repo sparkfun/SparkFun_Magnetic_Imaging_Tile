@@ -183,7 +183,7 @@ While the ChipKit MAX32 is not listed in the SparkFun catalog, you can also use 
 
 
 
-### Tools (Optional)
+### Tools
 
 You will need a soldering iron, solder, and [general soldering accessories](https://www.sparkfun.com/categories/49) for a secure connection when using the plated through holes.
 
@@ -265,7 +265,7 @@ You will need a soldering iron, solder, and [general soldering accessories](http
 
 ### Prototyping Accessories
 
-Depending on your setup, you may want to use IC hooks for a temporary connection. However, you will want to solder header pins to connect devices to the plated through holes for a secure connection. We opted for right angle headers for the SparkFun Magnetic Imaging Tile as well as M/F jumpers to connect to the SparkFun RedBoard Turbo - SAMD21 Development Board to reduce hte amount of soldering.
+Depending on your setup, you may want to use IC hooks for a temporary connection. However, you will want to solder header pins to connect devices to the plated through holes for a secure connection. We opted for right angle headers for the SparkFun Magnetic Imaging Tile as well as M/F jumpers to connect to the SparkFun RedBoard Turbo - SAMD21 Development Board to reduce the amount of soldering.
 
 <div class="grid cards col-4" markdown>
 
