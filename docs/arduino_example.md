@@ -6,7 +6,7 @@ This example is located in the Magnetic Imaging Tile's Hardware Repo. To grab it
 
 ### Upload Arduino Example
 
-After unzipping the compressed files, navigate to the hardware repo's folder and open the example: ... **SparkFun_Magnetic_Imaging_Tile** > **Software** > **arduino** > **Example1_Basic_Readings** > **Example1_Basic_Readings.ino**. This sketch listens for a character before parsing the data. For users using an Arduino microcontroller, select your board in the Tools menu (in our caset the **SparkFun RedBoard Turbo**) and the correct Port it enumerated on.
+After unzipping the compressed files, navigate to the hardware repo's folder and open the example: ... **SparkFun_Magnetic_Imaging_Tile** > **Software** > **arduino** > **Example1_Basic_Readings** > **Example1_Basic_Readings.ino**. This sketch listens for a character before parsing the data. For users using an Arduino microcontroller, select your board in the Tools menu (in our case the **SparkFun RedBoard Turbo**) and the correct Port it enumerated on.
 
 You can also copy or paste the code as shown below. Then click "Upload".
 
